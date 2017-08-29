@@ -1,4 +1,16 @@
-bla
+var mes_text = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+var dia_text = ["Dom", "Lun", "Mar", "Mie", "Juv", "Vie", "Sab"];
+
+estructurar();
+
+function estructurar() {
+  for (m = 0; m <= 11; m++) {
+    //Mes
+    let mes = document.createElement("DIV");
+    mes.className = "mes";
+    document.body.appendChild(mes);
+    //Tabla
     let tabla_mes = document.createElement("TABLE");
     tabla_mes.className = "tabla_mes";
     mes.appendChild(tabla_mes);
